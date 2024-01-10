@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/newstyle.css">
+
+    <style>
+        .header{
+    background-color: white;
+}
+.header .navbar a{
+    color: #000;
+}
+
+
+
+.review{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review .form{
+    flex: 1 1 41rem;
+}
+
+.review .form .review-form{
+    border-radius: 2rem;
+    background-color: white;
+    border-color: gold;
+    border-style: solid;
+    padding: 2rem;
+    width: 100%;
+}
+
+.review .form .review-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+.review  .form .review-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
+
+.review  .form .review-form .flex .inputBox input,select{
+    width:100%;
+    padding: 1.2rem 1.4rem;
+    font-size:1.6rem;
+    color:var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border-color: #a8a6a6;
+}
+textarea{
+    width:100%;
+    padding: 1.2rem 1.4rem;
+    font-size:1.6rem;
+    color:var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border:var(--border);
+    resize: none;
+}
+.review  .form .review-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+
+.review .form .review-form .flex .inputBox input:focus::placeholder{
+    color: var(--light-white);
+}
+
+.review .form .review-form .flex .inputBox span{
+    font-size:1.5rem;
+    color: var(--light-black);
+
+}
+
+.review .form .review-form .btn{
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body style="background-color:rgba(238, 237, 237, 0.755); background-repeat: no-repeat;background-size: cover;">
+    <section class="header" >
+        <a href="home.html" class="logo"><img src="images/pngwing.com.png" alt=""></a>
+    
+        <nav class="navbar">
+        <a href="#" >home</a>
+        <a href="meals.html" >menu</a>
+        <a href="package.html" >order</a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    
+
+
+
+<section class="review">
+
+
+    <div class="form">
+    <form action="" method="post" class="review-form">
+
+        <div class="flex">
+         <div class="inputBox">
+             <span>name :</span>
+             <input type="text" placeholder="enter your name" name="name" required>
+         </div>
+ 
+
+         <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+        </div>
+
+
+         <div class="inputBox">
+            <span>phone :</span>
+            <input type="number" placeholder="enter your phone" name="phone" required>
+        </div>
+
+
+        <div class="inputBox">
+            <span>the meal :</span>
+            <select required>
+                <option value="">ll</option>
+                <option value="">bb</option>
+
+            </select>
+        </div>
+
+        <div class="inputBox">
+            <span>adds :</span>
+            <select>
+                <option value="">ll</option>
+                <option value="">bb</option>
+
+            </select>
+        </div>
+
+        <div class="inputBox">
+            <span>drinks :</span>
+            <select>
+                <option value="">ll</option>
+                <option value="">bb</option>
+
+            </select>
+        </div>
+
+
+        
+
+
+        
+ 
+         <div class="inputBox">
+             <span>Note :</span>
+             
+             <textarea class="form-control" id="review" rows="5" placeholder="Enter your notes" ></textarea>
+         </div>
+ 
+        </div>
+ 
+        <input type="submit" value="submit" class="btn" name="send">
+     </form>
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="footer" >
+
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html" > <i class="fas fa-angle-right"></i>home</a>
+            <a href="about.html" > <i class="fas fa-angle-right"></i>menu</a>
+            <a href="package.html" > <i class="fas fa-angle-right"></i>order</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" > <i class="fas fa-angle-right"></i>about</a>
+            <a href="#" > <i class="fas fa-angle-right"></i>branches</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" > <i class="fas fa-phone"></i>+123-456-7890</a>
+            <a href="#" > <i class="fab fa-whatsapp"></i>+111-222-3333</a>
+            <a href="#" > <i class="fas fa-envelope"></i>adsffds@gmail.com</a>
+            <a href="#" > <i class="fas fa-map"></i>Egypt</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+
+
+
+        </div>
+    </div>
+
+    <div class="credit"> created by <span> web designer</span> | all rights reserved!</div>
+
+</section>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
